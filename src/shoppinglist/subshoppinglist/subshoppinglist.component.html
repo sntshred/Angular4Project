@@ -4,7 +4,14 @@
     <div class="com-xs-10">
         <app-shoppinglistEdit></app-shoppinglistEdit>
     <hr>
-    <p>The list is here </p>
+<ul class="list-group">
+    <a class="list-group-item" style="cursor:pointer" *ngFor="let item of ingridets"  >
+        {{item.name}}
+         ({{item.amount}})
+
+
+    </a>
+</ul>
     </div>
 
 </div>
